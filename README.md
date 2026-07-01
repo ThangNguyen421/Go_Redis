@@ -28,33 +28,3 @@ gredis/
 │   └── database.go
 └── server/         # TCP Server handling connection loops and Goroutine orchestration
     └── tcp.go
-**
-💻 Getting Started
-Prerequisites
-Go (version 1.16+) installed on your system.
-
-Installation & Execution
-Clone the repository:
-
-Bash
-git clone [https://github.com/yourusername/gredis.git](https://github.com/yourusername/gredis.git)
-cd gredis
-Start the Gredis Server:
-
-Bash
-go run main.go
-The server will start listening for TCP connections on the default Redis port 6379.
-**
-Interact via the official redis-cli:
-Open a new terminal window and run:
-
-Bash
-redis-cli -p 6379
-Supported Commands Demo:
-Plaintext
-127.0.0.1:6379> SET user_name "Quang Thang"
-OK
-127.0.0.1:6379> GET user_name
-"Quang Thang"
-127.0.0.1:6379> GET non_existing_key
-(nil)
